@@ -10,3 +10,14 @@ pipeline {
     }
 }
 
+pipeline {
+   agent any
+
+   stage {
+      stage ('my world') {
+         steps {
+            echo 'Hello my world'
+          }
+       }
+    }
+}
